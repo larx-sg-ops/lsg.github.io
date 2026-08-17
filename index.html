@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>アプリへ転送中...</title>
+  <script>
+    // ▼▼▼ ここを書き換えます ▼▼▼
+    // 最新のGASウェブアプリのURL（デプロイURL）を貼り付けてください。
+    
+    const gasBaseUrl = "https://script.google.com/a/macros/larx.co.jp/s/AKfycbyYVrJ4NlaIKDqBcTi6YyyvYQVz4vOqjNKeakEY3E3Ui7mIMNPQt5zGEGqj1_FFvTYx/exec";
+    // ▲▲▲ ここまで ▲▲▲
+
+    // アクセスされたURLのパラメータ（?sort=date など）を取得
+    const queryString = window.location.search; 
+
+    // GASのURLとパラメータを合体させる
+    const redirectUrl = gasBaseUrl + queryString;
+
+    // 合体させたURLへ転送（リダイレクト）する
+    window.location.replace(redirectUrl);
+  </script>
+</head>
+<body>
+  <p>最新のアプリケーションへ移動しています...</p>
+</body>
+</html>
